@@ -18,14 +18,59 @@ Dazzling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatti
 
 */
 
+
+@font-face {
+    font-family: 'dolce_vita_heavyafewXpounds';
+    src: url('dolce_vita_heavy_bold-webfont.eot');
+    src: url('dolce_vita_heavy_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dolce_vita_heavy_bold-webfont.woff2') format('woff2'),
+         url('dolce_vita_heavy_bold-webfont.woff') format('woff'),
+         url('dolce_vita_heavy_bold-webfont.ttf') format('truetype'),
+         url('dolce_vita_heavy_bold-webfont.svg#dolce_vita_heavyafewXpounds') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dolce_vita_lightsuper_light';
+    src: url('dolce_vita_light-webfont.eot');
+    src: url('dolce_vita_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dolce_vita_light-webfont.woff2') format('woff2'),
+         url('dolce_vita_light-webfont.woff') format('woff'),
+         url('dolce_vita_light-webfont.ttf') format('truetype'),
+         url('dolce_vita_light-webfont.svg#dolce_vita_lightsuper_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dolce_vitaquite_regular';
+    src: url('dolce_vita-webfont.eot');
+    src: url('dolce_vita-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dolce_vita-webfont.woff2') format('woff2'),
+         url('dolce_vita-webfont.woff') format('woff'),
+         url('dolce_vita-webfont.ttf') format('truetype'),
+         url('dolce_vita-webfont.svg#dolce_vitaquite_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /************ Estilos Aeroterrestre *************/
-.header-at{background-image: url('img/head-at.jpg'); width:100%; min-height: 233px;}
+.header-at{background-image: url('img/head-at.jpg'); width:100%; min-height: 233px; font-family: 'dolce_vitaquite_regular';
+    font-size: 30px;}
   .header-at header{max-width:1150px; margin:0 auto;}
     .header-at header section{width:40%;display:inline-block;}
     .header-at header aside{width:55%;display:inline-block;text-align:right;}
       .header-at header aside ul {}
         .header-at header aside ul li{display:inline-block; color:#fff;}
           .header-at header aside ul li span {color:#1ba2d3;}
+          .header-at header aside ul li a {background-color:#1ba2d3; color:#fff; padding:5px 10px;}
+            .header-at header aside ul li a:hover{opacity:0.8;}
+.menu-at{font-family: 'dolce_vitaquite_regular';}
+  .menu-at a{background-color:#1ba2d3; color:#fff !important; font-size:18px; padding:18px 69px !important; }
+  .menu-at a:hover{background-color:#fff !important;color:#1ba2d3 !important;}
+
 
 
 body {
@@ -607,7 +652,6 @@ li.recentcomments {
   font-weight: 200;
   margin-bottom: 0;
   margin-top: -2px;
-  border-bottom: 1px solid #eee;
 }
 .navbar-default .navbar-nav > li > a {
   color: #999;
