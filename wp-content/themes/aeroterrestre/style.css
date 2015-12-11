@@ -65,12 +65,82 @@ Dazzling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatti
       .header-at header aside ul {}
         .header-at header aside ul li{display:inline-block; color:#fff;}
           .header-at header aside ul li span {color:#1ba2d3;}
-          .header-at header aside ul li a {background-color:#1ba2d3; color:#fff; padding:5px 10px;}
+          .header-at header aside ul li a {background-color:#1ba2d3; color:#fff; padding:5px 10px; cursor:pointer}
             .header-at header aside ul li a:hover{opacity:0.8;}
 .menu-at{font-family: 'dolce_vitaquite_regular';}
   .menu-at a{background-color:#1ba2d3; color:#fff !important; font-size:18px; padding:18px 69px !important; }
   .menu-at a:hover{background-color:#fff !important;color:#1ba2d3 !important;}
 
+/********* home *********/
+.fotorama{}
+    .fotorama a{}
+        .fotorama a:hover{opacity:0.8}
+
+.homespiffs{margin:10px 0; width:100%;}
+    .homespiffs a{display:inline-block; width:32%; margin:0 8px 0px; cursor:pointer;}
+        .homespiffs a:last-child{margin:0;}
+            .homespiffs a:hover{opacity:0.8}
+    .homespiffs a img{display:inline-block;width:100%;}
+.fotorama__html div,
+.fotorama__html a {
+  display: block;
+  height: 100%;
+  /* Transparent links are not clickable in IE,
+     but non-existent background fixes this.
+    (Put an empty 1×1 image here to avoid
+     errors in console.) */
+  background: url(_.gif);
+}
+
+.paqueteshome{}
+    .paqueteshome header{background-color:#31353d; width:100%; padding:20px 0 10px 25px; margin: 50px 0 0; color:#fff;font-family: 'dolce_vitaquite_regular';
+        font-size:20px;}
+    .paqueteshome ul{padding:30px 0;}
+        .paqueteshome ul li{list-style:none;display:inline-block;width:23%; margin:0 20px 0 0;line-height:15px; vertical-align:top;}
+        .paqueteshome ul li:last-child{margin:0;}
+            .paqueteshome ul li a {cursor:pointer;}
+            .paqueteshome ul li a:hover {opacity:0.8;}
+            .paqueteshome ul li a:first-child img{width:100%;}
+            .paqueteshome ul li a:last-child img{width:60%}
+            .paqueteshome ul li h1{color:#31353d; font-size:25px;font-family: 'dolce_vitaquite_regular';}
+            .paqueteshome ul li h2{color:#1ba2d3; font-size:25px;font-family: 'dolce_vitaquite_regular';}
+            .paqueteshome ul li span{color:#c0baba; font-size:15px;}
+
+.actividades-extremas{margin:0 auto; max-width:1100px;display:block;width:100%;}
+    .actividades-extremas a{cursor:pointer;}
+        .actividades-extremas a:hover{opacity:0.8;}
+
+.prefoot{max-width:1214px;width:100%;display:block;margin:0 auto; padding: 50px 0;}
+    .prefoot ul{}
+    .prefoot ul li{display:inline-block;list-style:none;width:16%;text-align:center;font-family: 'dolce_vitaquite_regular';
+        font-size:19px;vertical-align: middle;line-height: 17px;}
+        .prefoot ul li a{cursor:pointer; color:#3e454c;}
+        .prefoot ul li a:hover{text-decoration:underline;}
+
+.footin{max-width:1214px;width:100%;display:block;margin:0 auto; padding: 30px 0 25px;font-family: 'dolce_vitaquite_regular';}
+    .footin aside{color:#a0a3a6;font-size:19px;width:49%;display:inline-block;}
+    .footin section{float:right; color:#757f8a; font-size:16px;width:49%;display:inline-block;text-align:right;}
+        .footin section a {color:#a0a3a6;}
+
+/**************** Internas ***************/
+/********* Aeroterrestre *********/
+.internas{}
+    .internas .paqueteshome:first-child header{margin:0;}
+        .internas .paqueteshome table{display:block; margin:0 auto; padding:20px 0; width:60%;}
+            .internas .paqueteshome table th{background-color:#1BA2D3; color:#fff;font-family: 'dolce_vitaquite_regular'; font-size:16px;font-weight: 100;}
+            .internas .paqueteshome table tr td, .internas .paqueteshome table th{padding:10px 20px;}
+            .internas .paqueteshome table tr{border-bottom:1px solid #1BA2D3;}
+        .internas .paqueteshome section {padding: 20px 0;}
+            .internas .paqueteshome section article{border-bottom:1px solid #1BA2D3; padding: 10px 0 50px;}
+                .internas .paqueteshome section article img{float:left;padding:0 25px 0;width:40%;}
+                .internas .paqueteshome section article h1{font-family: 'dolce_vitaquite_regular';font-size:25px; color:#31353d;padding:0 0 20px; }
+                .internas .paqueteshome section article h2{font-family: 'dolce_vitaquite_regular';font-size:25px; color:#1ba2d3;padding:0 0 20px;}
+                .internas .paqueteshome section article span{color:#c0baba; }
+                .internas .paqueteshome a{background-color:#31353d;color:#fff;font-family: 'dolce_vitaquite_regular';font-size:16px; padding:15px 25px;margin:20px 0 0; }
+                .internas .paqueteshome a:hover{opacity:0.8;}
+.bterrestreaereo{display:block;margin:0 auto; padding:20px 0; width:14%;}
+.cotizar{}
+    .cotizar section{max-width:60%; display:block; margin:0 auto;a}
 
 
 body {
@@ -687,7 +757,7 @@ li.recentcomments {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
   color: #fff;
-  background-color: #1FA67A;
+  background-color: #37BBE8;
 }
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
   color: #999;
@@ -930,34 +1000,6 @@ p.logged-in-as {
   opacity: .8;
 }
 
-/* =Mobile Styling
------------------------------------------------ */
-
-@media (max-width: 768px) {
-  .pull-right {
-    float: none !important;
-  }
-  .pull-left {
-    float: none !important;
-  }
-  .site-info, .copyright {
-      text-align: center;
-  }
-  .footer-nav.nav, .copyright {
-    float: none;
-  }
-  .flex-caption {
-    display: none;
-  }
-  .navbar > .container .navbar-brand {
-    margin: 0;
-  }
-  .navbar-default .navbar-nav > li > a {
-    line-height: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
 
 /* =Social icons
 ----------------------------------------------- */
@@ -1029,4 +1071,60 @@ p.logged-in-as {
 }
 .cfa-button:hover a {
     color: #1FA67A;
+}
+
+
+/* =Mobile Styling
+----------------------------------------------- */
+
+@media (max-width: 1024px) {
+.menu-at a {padding: 18px 50px !important;}
+.homespiffs a {  width: 31%;}
+.internas .paqueteshome section article img {width: 47%;}
+
+}
+
+@media (max-width: 768px) {
+.pull-right { float: none !important; }
+.pull-left { float: none !important;}
+.site-info, .copyright { text-align: center;  }
+.footer-nav.nav, .copyright { float: none;  }
+.flex-caption { display: none;}
+.navbar > .container .navbar-brand {  margin: 0;  }
+.navbar-default .navbar-nav > li > a {line-height: 20px;padding-top: 10px; padding-bottom: 10px;  }
+.menu-at a { padding: 18px 27.8px !important;}
+.header-at header aside ul li { font-size: 27px;}
+.header-at { min-height: 181px;}
+.paqueteshome ul li { width: 22%;}
+.paqueteshome ul li h1 { font-size: 17px;}
+.prefoot ul{padding:0;}
+}
+
+@media (max-width: 600px) {
+.header-at header aside { text-align:initial; width: 100%;}
+.header-at header section { display: block; padding: 9px 6% 0; text-align: center;  width: 100%;}
+.header-at header aside ul{padding:0 0 0 3px;}
+.header-at header aside ul li { font-size: 20px;}
+.navbar.navbar-default { background-color: #1985ad;}
+.navbar-default .navbar-toggle .icon-bar {background-color: #fff;}
+.header-at {min-height: 235px;}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9
+    {padding:0;}
+#content { margin-bottom: 20px; margin-top: 24px;}
+.homespiffs a { margin: 0 0 19px;padding: 0 11%;text-align: center; width: 100%;}
+.paqueteshome ul li, .paqueteshome ul li:last-child{display: block; margin: 0 auto 24px; padding: 0; width: 80%;}
+.prefoot ul li{padding: 0 0 18px;width: 100%;}
+.footin aside { width: 100%;}
+.footin section { padding: 3px 0 26px; text-align: left;  width: 100%;}
+.internas .paqueteshome table { width: 100%;}
+.internas .paqueteshome table tr td, .internas .paqueteshome table th { padding: 10px 37px;}
+.internas .paqueteshome table tr td:nth-child(2), .internas .paqueteshome table th:nth-child(2),
+.internas .paqueteshome table tr td:nth-child(3), .internas .paqueteshome table th:nth-child(3)
+    { display:none;}
+.bterrestreaereo { width: 41%;}
+.internas .paqueteshome section article img { padding: 0 6% 31px; width: 98%;}
+.internas .paqueteshome section article h1{padding: 0 0 1px;}
+.cotizar section { max-width: 88%;}
+
+
 }

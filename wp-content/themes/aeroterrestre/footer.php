@@ -9,23 +9,31 @@
 ?>
 	</div><!-- #content -->
 
+<div class="actividades-extremas"><a href="<?php echo get_site_url(); ?>/actividades-extremas"><img src="<?php echo get_site_url(); ?>/wp-content/themes/aeroterrestre/img/actividades-extremas.jpg"></a></div>
+
+<div class="prefoot"><ul>
+    <li><a href="<?php echo get_site_url(); ?>/aero">Aero</a></li>
+	<li><a href="<?php echo get_site_url(); ?>/terrestre">Terrestre</a></li>
+	<li><a href="<?php echo get_site_url(); ?>/eventos">Eventos</a></li>
+	<li><a href="<?php echo get_site_url(); ?>/eventos">actividades extremas</a></li>
+	<li><a href="<?php echo get_site_url(); ?>/productos">Productos</a></li>
+	<li><a href="<?php echo get_site_url(); ?>/aprende-espanol">aprende español</a></li>
+</ul></div>
+
+
 	<div id="footer-area">
 		<div class="container footer-inner">
 			<?php get_sidebar( 'footer' ); ?>
+			
+			<div class="footin">
+				<aside>aeroterrestre 2015</aside>
+				<section>desarrollado por <a href="http://allabout.company/" target="_blank">allabout</a></section>
+			</div>
+			
 		</div>
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
-			<div class="site-info container">
-				<?php dazzling_social(); ?>
-				<nav role="navigation" class="col-md-6">
-					<?php dazzling_footer_links(); ?>
-				</nav>
-				<div class="copyright col-md-6">
-					<?php echo of_get_option( 'custom_footer_text', 'dazzling' ); ?>
-					<?php dazzling_footer_info(); ?>
-				</div>
-			</div><!-- .site-info -->
-			<div class="scroll-to-top"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
+
 		</footer><!-- #colophon -->
 	</div>
 </div><!-- #page -->
