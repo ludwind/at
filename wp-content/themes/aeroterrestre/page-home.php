@@ -22,9 +22,9 @@ get_header(); ?>
 
 <!-- sliders -->
 <div class="fotorama">
-  <div data-img="wp-content/themes/aeroterrestre/img/sliders/cayos.jpg"><a href="<?php echo get_site_url(); ?>/aero/"></a></div>
-  <div data-img="wp-content/themes/aeroterrestre/img/sliders/monterrico.jpg"><a href="<?php echo get_site_url(); ?>/aero/"></a></div>
-  <div data-img="wp-content/themes/aeroterrestre/img/sliders/livingstones.jpg"><a href="<?php echo get_site_url(); ?>/aero/"></a></div>
+  <div data-img="wp-content/themes/aeroterrestre/img/sliders/cayos.jpg"><a href="<?php echo get_site_url(); ?>/paquetes//"></a></div>
+  <div data-img="wp-content/themes/aeroterrestre/img/sliders/monterrico.jpg"><a href="<?php echo get_site_url(); ?>/paquetes/"></a></div>
+  <div data-img="wp-content/themes/aeroterrestre/img/sliders/livingstones.jpg"><a href="<?php echo get_site_url(); ?>/paquetes//"></a></div>
 
 <!--
   <a href="<?php echo get_site_url(); ?>/aero"><img src="wp-content/themes/aeroterrestre/img/sliders/cayos.jpg"></a>

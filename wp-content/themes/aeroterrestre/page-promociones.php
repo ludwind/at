@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Actividades extremas
+ * Template Name: Promociones
  *
  * This is the template that displays full width page without sidebar
  *
@@ -16,7 +16,7 @@ get_header(); ?>
 		<main id="main" class="site-main internas" role="main">
 
 <div class="paqueteshome">
-	<header>Actividades extremas</header>
+	<header>Promociones</header>
 
 <section>
 	<article>

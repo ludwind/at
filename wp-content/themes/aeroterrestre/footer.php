@@ -9,7 +9,7 @@
 ?>
 	</div><!-- #content -->
 
-<div class="actividades-extremas"><a href="<?php echo get_site_url(); ?>/actividades-extremas"><img src="<?php echo get_site_url(); ?>/wp-content/themes/aeroterrestre/img/actividades-extremas.jpg"></a></div>
+<div class="actividades-extremas"><a href="<?php echo get_site_url(); ?>/promociones/"><img src="<?php echo get_site_url(); ?>/wp-content/themes/aeroterrestre/img/actividades-extremas.jpg"></a></div>
 
 <div class="prefoot"><ul>
     <li><a href="<?php echo get_site_url(); ?>/aero">Aero</a></li>

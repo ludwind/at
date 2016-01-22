@@ -26,11 +26,25 @@
 		<a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_site_url(); ?>/wp-content/themes/aeroterrestre/img/logo-at.png"/></a>
 	</section>
 	<aside>
+		
+<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
 		<ul>
 			<li><img src="<?php echo get_site_url(); ?>/wp-content/themes/aeroterrestre/img/tel.png"/></li>
 			<li><span>502 </span>4015-4340</li>
 			<li><a href="<?php echo get_site_url(); ?>/cotizar">Cotiza ahora</a></li>
 		</ul>
+		
+		<div class="redes">
+			<a href=""><img src="<?php echo get_site_url(); ?>/wp-content/themes/aeroterrestre/img/home/headredes-facebook.png"/></a>
+			<a href=""><img src="<?php echo get_site_url(); ?>/wp-content/themes/aeroterrestre/img/home/headredes-instagram.png"/></a>
+			<a href=""><img src="<?php echo get_site_url(); ?>/wp-content/themes/aeroterrestre/img/home/headredes-snapchat.png"/></a>
+		</div>
 	</aside>
 </header></div>
 

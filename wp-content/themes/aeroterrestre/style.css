@@ -61,14 +61,18 @@ Dazzling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatti
     font-size: 30px;}
   .header-at header{max-width:1150px; margin:0 auto;}
     .header-at header section{width:40%;display:inline-block;}
-    .header-at header aside{width:55%;display:inline-block;text-align:right;}
+    .header-at header aside{width:55%;display:inline-block;text-align:right;
+                vertical-align: top;padding: 32px 0 0;}
+        .header-at header aside #google_translate_element{margin:10px 0 19px;}
       .header-at header aside ul {}
         .header-at header aside ul li{display:inline-block; color:#fff;}
           .header-at header aside ul li span {color:#1ba2d3;}
           .header-at header aside ul li a {background-color:#1ba2d3; color:#fff; padding:5px 10px; cursor:pointer}
             .header-at header aside ul li a:hover{opacity:0.8;}
+.redes{}
+    .redes a{margin:0 0 0 5px;}
 .menu-at{font-family: 'dolce_vitaquite_regular';}
-  .menu-at a{background-color:#1ba2d3; color:#fff !important; font-size:18px; padding:18px 69px !important; }
+  .menu-at a{background-color:#1ba2d3; color:#fff !important; font-size:18px; padding:18px 76px !important; }
   .menu-at a:hover{background-color:#fff !important;color:#1ba2d3 !important;}
 
 /********* home *********/
@@ -1095,7 +1099,9 @@ p.logged-in-as {
 .navbar > .container .navbar-brand {  margin: 0;  }
 .navbar-default .navbar-nav > li > a {line-height: 20px;padding-top: 10px; padding-bottom: 10px;  }
 .menu-at a { padding: 18px 27.8px !important;}
+.header-at header aside{padding: 13px 0 0;}
 .header-at header aside ul li { font-size: 27px;}
+.header-at header aside #google_translate_element {margin: 10px 0 11px;}
 .header-at { min-height: 181px;}
 .paqueteshome ul li { width: 22%;}
 .paqueteshome ul li h1 { font-size: 17px;}
@@ -1103,9 +1109,10 @@ p.logged-in-as {
 }
 
 @media (max-width: 600px) {
-.header-at header aside { text-align:initial; width: 100%;}
+.header-at header aside { text-align:center; width: 100%;}
 .header-at header section { display: block; padding: 9px 6% 0; text-align: center;  width: 100%;}
 .header-at header aside ul{padding:0 0 0 3px;}
+
 .header-at header aside ul li { font-size: 20px;}
 .navbar.navbar-default { background-color: #1985ad;}
 .navbar-default .navbar-toggle .icon-bar {background-color: #fff;}
@@ -1127,6 +1134,6 @@ p.logged-in-as {
 .internas .paqueteshome section article img { padding: 0 6% 31px; width: 98%;}
 .internas .paqueteshome section article h1{padding: 0 0 1px;}
 .cotizar section { max-width: 88%;}
-
+.redes{margin:0 0 20px;}
 
 }
