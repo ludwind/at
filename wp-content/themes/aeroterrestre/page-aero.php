@@ -20,51 +20,51 @@ get_header(); ?>
 	<table><tbody>
 	<tr>
 		<th>Vuelo</th>
-		<th>Ciudad de Origen</th>
-		<th>Ciudad de Destino</th>
-		<th>Precio</th>
+		<th>Origen</th>
+		<th>Destino</th>
+		<th>Tiempo estimado</th>
 	</tr>
 	<tr>
 		<td>Cayos de Belice</td>
 		<td>Guatemala</td>
 		<td>Belice</td>
-		<td>$499.99</td>		
+		<td>2 hrs</td>
 	</tr>
 	<tr>
 		<td>Monterrico</td>
 		<td>Guatemala</td>
 		<td>Monterrico</td>
-		<td>$99.99</td>		
+		<td>1 hrs</td>
 	</tr>
 	<tr>
 		<td>Livingstone</td>
 		<td>Guatemala</td>
 		<td>Izabal</td>
-		<td>$199.99</td>		
+		<td>2 hrs</td>
 	</tr>
 	<tr>
 		<td>Panajachel</td>
 		<td>Guatemala</td>
 		<td>Panajachel</td>
-		<td>$499.99</td>		
+		<td>2 hrs</td>
 	</tr>
 	<tr>
 		<td>Semuc Champey</td>
 		<td>Guatemala</td>
 		<td>Altaverapaz</td>
-		<td>$799.99</td>		
+		<td>3  hrs</td>
 	</tr>
 	<tr>
 		<td>Tikal</td>
 		<td>Guatemala</td>
 		<td>Petén</td>
-		<td>$999.99</td>		
+		<td>2 hrs</td>
 	</tr>
 	<tr>
 		<td>Antigua Guatemala</td>
 		<td>Guatemala</td>
 		<td>Antigua Guatemala</td>
-		<td>$199.99</td>		
+		<td>2 hrs</td>
 	</tr>	
 	</tbody></table>
 	<div class="bterrestreaereo"><a href="<?php echo get_site_url(); ?>/cotizar">reservar</a></div>

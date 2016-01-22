@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Aprende Espanol
+ * Template Name: Paquetes
  *
  * This is the template that displays full width page without sidebar
  *

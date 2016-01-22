@@ -34,7 +34,7 @@ get_header(); ?>
 
 <div class="homespiffs">
 	<a href="<?php echo get_site_url(); ?>/cotizar"><img src="wp-content/themes/aeroterrestre/img/home/cotizar.png"></a>
-	<a href="<?php echo get_site_url(); ?>/hospedaje"><img src="wp-content/themes/aeroterrestre/img/home/hospedaje.png"></a>
+	<a href="<?php echo get_site_url(); ?>/hospedaje"><img src="wp-content/themes/aeroterrestre/img/home/fotos.png"></a>
 	<a href="<?php echo get_site_url(); ?>/aero"><img src="wp-content/themes/aeroterrestre/img/home/vuelos.png"></a>
 </div>
 
