@@ -19,13 +19,20 @@ get_header(); ?>
 	<header>Promociones</header>
 
 <section>
+<?php if( have_rows('repeatermain') ): while ( have_rows('repeatermain') ) : the_row();
+		$image = get_sub_field('imgprincipal');
+		$titulo = get_sub_field('titulo');
+		$descripcion = get_sub_field('descripcion');
+		$precio = get_sub_field('precio');
+?>
 	<article>
-			<img src="<?php echo get_site_url(); ?>/wp-content/themes/aeroterrestre/img/internas/candelaria.jpg">
-			<h1>Las cuevas de candelaria</h1>
-			<span>Una aventura extrema hacia lo profundo de Guatemala, una aventura inolvidable llena de emoción y adrenalina.</span>
-			<h2>$299.99</h2>
-			<a href="<?php echo get_site_url(); ?>/cotizar">reservar</a>
+			<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+			<h1><?php echo $titulo?></h1>
+			<span><?php echo $descripcion?></span>
+			<h2><?php echo $precio?></h2>
+			<a href="<?php echo get_site_url(); ?>/cotizar">solicitar</a>
 	</article>
+<?php endwhile; else : endif; ?>
 </section>
 	
 </div>

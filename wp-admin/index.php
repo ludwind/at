@@ -92,39 +92,88 @@ $screen->set_help_sidebar(
 include( ABSPATH . 'wp-admin/admin-header.php' );
 ?>
 
+
 <div class="wrap">
-	<h2><?php echo esc_html( $title ); ?></h2>
+	<h2>Bienvenido(a), <?php global $current_user; if ( isset($current_user) ) { echo $current_user->display_name;}?></h2>
 
-<?php if ( has_action( 'welcome_panel' ) && current_user_can( 'edit_theme_options' ) ) :
-	$classes = 'welcome-panel';
+<head>
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
 
-	$option = get_user_meta( get_current_user_id(), 'show_welcome_panel', true );
-	// 0 = hide, 1 = toggled to show or single site creator, 2 = multisite site owner
-	$hide = 0 == $option || ( 2 == $option && wp_get_current_user()->user_email != get_option( 'admin_email' ) );
-	if ( $hide )
-		$classes .= ' hidden'; ?>
 
-	<div id="welcome-panel" class="<?php echo esc_attr( $classes ); ?>">
-		<?php wp_nonce_field( 'welcome-panel-nonce', 'welcomepanelnonce', false ); ?>
-		<a class="welcome-panel-close" href="<?php echo esc_url( admin_url( '?welcome=0' ) ); ?>"><?php _e( 'Dismiss' ); ?></a>
-		<?php
-		/**
-		 * Add content to the welcome panel on the admin dashboard.
-		 *
-		 * To remove the default welcome panel, use {@see remove_action()}:
-		 *
-		 *     remove_action( 'welcome_panel', 'wp_welcome_panel' );
-		 *
-		 * @since 3.5.0
-		 */
-		do_action( 'welcome_panel' );
-		?>
-	</div>
-<?php endif; ?>
+<div class="tutoriales"><center><h3>¡Administrar este sitio web es fácil!</h3></br>Sigue las instrucciones que encontrarás a continuación:</center>
 
-	<div id="dashboard-widgets-wrap">
-	<?php wp_dashboard(); ?>
-	</div><!-- dashboard-widgets-wrap -->
+	<section class="ac-container">
+		<div>
+			<input id="ac-1" name="accordion-1" type="radio" checked />
+			<label for="ac-1">¿Cómo agregar viajes en Aereo y terrestre?</label>
+			<article class="ac-auto">
+<!--<iframe width="320" height="215" src="https://www.youtube.com/embed/9aBMWcFRJvA" frameborder="0" allowfullscreen></iframe>-->
+				<p><ol>
+<li>Ingresa en el menu izquierdo a la seccion "Paginas".</li>
+<li>Busca en el listado la opcion "Aereo" o "Terrestre".</li>
+<li>Para borrar simplemente haz clic en el boton "-".</li>
+<li>Para agregar nuevos viajes haz clic en "Add row"</li>
+<li>Luego simplemente agrega la informacion en cada titular.</li>
+<li>Para finalizar haz clic en "Actualizar".</li>
+				</ol></p>
+			</article>
+		</div>
+		
+		<div>
+			<input id="ac-2" name="accordion-1" type="radio" checked />
+			<label for="ac-2">¿Cómo actualizar paquetes, eventos, productos y promociones?</label>
+			<article class="ac-auto">
+<!--<iframe width="320" height="215" src="https://www.youtube.com/embed/H4vmXmoBlGQ" frameborder="0" allowfullscreen></iframe>-->				
+				<p><ol>
+<li>Ingresa en el menu izquierdo a la seccion "Paginas"</li>
+<li>Busca en el listado la opcion "paquetes", "eventos", "productos" o "promociones"</li>
+<li>Para borrar simplemente haz clic en el boton "-"</li>
+<li>Para agregar nuevos items haz clic en "Add row"</li>
+<li>Luego en el boton "Anadir imagen" para cargar una fotografia.</li>
+<li>En cada titular puedes llenar la informacion sobre cada item.</li>
+<li>Para finalizar haz clic en "Actualizar".</li>
+				</ol></p>
+			</article>
+		</div>		
+
+		<div>
+			<input id="ac-3" name="accordion-1" type="radio" checked />
+			<label for="ac-3">¿Cómo actualizar la pagina de inicio?</label>
+			<article class="ac-auto">
+<!--<iframe width="320" height="215" src="https://www.youtube.com/embed/G8ricPrqxSg" frameborder="0" allowfullscreen></iframe>-->				
+				<p><ol>
+<li>Ingresa en el menu izquierdo a la seccion "Paginas".</li>
+<li>Busca en el listado la opcion "Inicio".</li>
+<li>Para borrar simplemente haz clic en el boton "-".</li>
+<li>Para agregar imagenes nuevas haz clic en "Add row".</li>
+<li>Luego en el boton "Anadir imagen" para cargar una fotografia.</li>
+<li>En la opcion "Select" puedes elegir la pestana a la cual deseas enlazar la imagen.</li>
+<li>Para finalizar haz clic en "Actualizar".</li>
+				</ol></p>
+			</article>
+		</div>
+		
+		<div>
+			<input id="ac-4" name="accordion-1" type="radio" />
+			<label for="ac-4">¿Cómo actualizar fotografias?</label>
+			<article class="ac-auto">
+<!--<iframe width="320" height="215" src="https://www.youtube.com/embed/QjpAjaJaMJ0" frameborder="0" allowfullscreen></iframe>-->
+				<p><ol>
+<li>Ingresa en el menu izquierdo a la seccion "Banco de galerias".</li>
+<li>Busca en el listado la opcion de icono "Demo Album".</li>
+<li>Para borrar simplemente haz clic en el icono "Basurero".</li>
+<li>Para agregar imagenes nuevas haz clic en "Add files" en la caja amarilla en la parte superior.</li>
+<li>Elige la imagen para agregar y espera a que finalize su carga.</li>
+<li>No es necesario agregar ningun titular o descripcion, basta solamente con la imagen.</li>
+<li>Para finalizar haz clic en "Guardar Album" en la parte superior.</li>
+				</ol></p>
+			</article>
+		</div>
+	</section>
+
+</div>
+
 
 </div><!-- wrap -->
 

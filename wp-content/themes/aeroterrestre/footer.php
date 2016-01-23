@@ -12,12 +12,12 @@
 <div class="actividades-extremas"><a href="<?php echo get_site_url(); ?>/promociones/"><img src="<?php echo get_site_url(); ?>/wp-content/themes/aeroterrestre/img/actividades-extremas.jpg"></a></div>
 
 <div class="prefoot"><ul>
-    <li><a href="<?php echo get_site_url(); ?>/aero">Aero</a></li>
+    <li><a href="<?php echo get_site_url(); ?>/aero">Aéreo</a></li>
 	<li><a href="<?php echo get_site_url(); ?>/terrestre">Terrestre</a></li>
+	<li><a href="<?php echo get_site_url(); ?>/paquetes">Paquetes</a></li>
+	<li><a href="<?php echo get_site_url(); ?>/promociones">Promociones</a></li>
 	<li><a href="<?php echo get_site_url(); ?>/eventos">Eventos</a></li>
-	<li><a href="<?php echo get_site_url(); ?>/eventos">actividades extremas</a></li>
 	<li><a href="<?php echo get_site_url(); ?>/productos">Productos</a></li>
-	<li><a href="<?php echo get_site_url(); ?>/aprende-espanol">aprende español</a></li>
 </ul></div>
 
 

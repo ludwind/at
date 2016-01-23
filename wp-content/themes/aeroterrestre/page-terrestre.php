@@ -25,49 +25,19 @@ get_header(); ?>
 		<th>Ciudad de Destino</th>
 		<th>Precio</th>
 	</tr>
+<?php if( have_rows('informacion') ): while ( have_rows('informacion') ) : the_row();
+		$viaje = get_sub_field('viaje');
+		$origen = get_sub_field('origen');
+		$destino = get_sub_field('destino');
+		$tiempo = get_sub_field('tiempo_estimado');
+?>
 	<tr>
-		<td>Cayos de Belice</td>
-		<td>Guatemala</td>
-		<td>Belice</td>
-		<td>$499.99</td>		
+		<td><?php echo $viaje?></td>
+		<td><?php echo $origen?></td>
+		<td><?php echo $destino?></td>
+		<td><?php echo $tiempo?></td>
 	</tr>
-	<tr>
-		<td>Monterrico</td>
-		<td>Guatemala</td>
-		<td>Monterrico</td>
-		<td>$99.99</td>		
-	</tr>
-	<tr>
-		<td>Livingstone</td>
-		<td>Guatemala</td>
-		<td>Izabal</td>
-		<td>$199.99</td>		
-	</tr>
-	<tr>
-		<td>Panajachel</td>
-		<td>Guatemala</td>
-		<td>Panajachel</td>
-		<td>$499.99</td>		
-	</tr>
-	<tr>
-		<td>Semuc Champey</td>
-		<td>Guatemala</td>
-		<td>Altaverapaz</td>
-		<td>$799.99</td>		
-	</tr>
-	<tr>
-		<td>Tikal</td>
-		<td>Guatemala</td>
-		<td>Petén</td>
-		<td>$999.99</td>		
-	</tr>
-	<tr>
-		<td>Antigua Guatemala</td>
-		<td>Guatemala</td>
-		<td>Antigua Guatemala</td>
-		<td>$199.99</td>		
-	</tr>	
-	</tbody></table>
+<?php endwhile; else : endif; ?>	</tbody></table>
 	<div class="bterrestreaereo"><a href="<?php echo get_site_url(); ?>/cotizar">reservar</a></div>
 	
 </div>

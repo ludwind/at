@@ -24,48 +24,20 @@ get_header(); ?>
 		<th>Destino</th>
 		<th>Tiempo estimado</th>
 	</tr>
+	
+<?php if( have_rows('informacion') ): while ( have_rows('informacion') ) : the_row();
+		$viaje = get_sub_field('viaje');
+		$origen = get_sub_field('origen');
+		$destino = get_sub_field('destino');
+		$tiempo = get_sub_field('tiempo_estimado');
+?>
 	<tr>
-		<td>Cayos de Belice</td>
-		<td>Guatemala</td>
-		<td>Belice</td>
-		<td>2 hrs</td>
+		<td><?php echo $viaje?></td>
+		<td><?php echo $origen?></td>
+		<td><?php echo $destino?></td>
+		<td><?php echo $tiempo?></td>
 	</tr>
-	<tr>
-		<td>Monterrico</td>
-		<td>Guatemala</td>
-		<td>Monterrico</td>
-		<td>1 hrs</td>
-	</tr>
-	<tr>
-		<td>Livingstone</td>
-		<td>Guatemala</td>
-		<td>Izabal</td>
-		<td>2 hrs</td>
-	</tr>
-	<tr>
-		<td>Panajachel</td>
-		<td>Guatemala</td>
-		<td>Panajachel</td>
-		<td>2 hrs</td>
-	</tr>
-	<tr>
-		<td>Semuc Champey</td>
-		<td>Guatemala</td>
-		<td>Altaverapaz</td>
-		<td>3  hrs</td>
-	</tr>
-	<tr>
-		<td>Tikal</td>
-		<td>Guatemala</td>
-		<td>Petén</td>
-		<td>2 hrs</td>
-	</tr>
-	<tr>
-		<td>Antigua Guatemala</td>
-		<td>Guatemala</td>
-		<td>Antigua Guatemala</td>
-		<td>2 hrs</td>
-	</tr>	
+<?php endwhile; else : endif; ?>
 	</tbody></table>
 	<div class="bterrestreaereo"><a href="<?php echo get_site_url(); ?>/cotizar">reservar</a></div>
 	
