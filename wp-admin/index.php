@@ -109,6 +109,7 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 			<label for="ac-1">¿Cómo agregar viajes en Aereo y terrestre?</label>
 			<article class="ac-auto">
 <!--<iframe width="320" height="215" src="https://www.youtube.com/embed/9aBMWcFRJvA" frameborder="0" allowfullscreen></iframe>-->
+<iframe width="320" height="215" src="https://www.youtube.com/embed/qaxSQqXxFgY" frameborder="0" allowfullscreen></iframe>
 				<p><ol>
 <li>Ingresa en el menu izquierdo a la seccion "Paginas".</li>
 <li>Busca en el listado la opcion "Aereo" o "Terrestre".</li>
@@ -125,6 +126,7 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 			<label for="ac-2">¿Cómo actualizar paquetes, eventos, productos y promociones?</label>
 			<article class="ac-auto">
 <!--<iframe width="320" height="215" src="https://www.youtube.com/embed/H4vmXmoBlGQ" frameborder="0" allowfullscreen></iframe>-->				
+<iframe width="320" height="215" src="https://www.youtube.com/embed/3ejTAs30BLE" frameborder="0" allowfullscreen></iframe>
 				<p><ol>
 <li>Ingresa en el menu izquierdo a la seccion "Paginas"</li>
 <li>Busca en el listado la opcion "paquetes", "eventos", "productos" o "promociones"</li>
@@ -142,6 +144,7 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 			<label for="ac-3">¿Cómo actualizar la pagina de inicio?</label>
 			<article class="ac-auto">
 <!--<iframe width="320" height="215" src="https://www.youtube.com/embed/G8ricPrqxSg" frameborder="0" allowfullscreen></iframe>-->				
+<iframe width="320" height="215" src="https://www.youtube.com/embed/mOQrvPfC04I" frameborder="0" allowfullscreen></iframe>
 				<p><ol>
 <li>Ingresa en el menu izquierdo a la seccion "Paginas".</li>
 <li>Busca en el listado la opcion "Inicio".</li>
@@ -159,6 +162,7 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 			<label for="ac-4">¿Cómo actualizar fotografias?</label>
 			<article class="ac-auto">
 <!--<iframe width="320" height="215" src="https://www.youtube.com/embed/QjpAjaJaMJ0" frameborder="0" allowfullscreen></iframe>-->
+<iframe width="320" height="215" src="https://www.youtube.com/embed/BQTIXeWFcvo" frameborder="0" allowfullscreen></iframe>
 				<p><ol>
 <li>Ingresa en el menu izquierdo a la seccion "Banco de galerias".</li>
 <li>Busca en el listado la opcion de icono "Demo Album".</li>
